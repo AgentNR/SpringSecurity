@@ -43,7 +43,7 @@ public class SecurityConfiguration {
         return http.build();
     }
 
-    @Override
+
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
